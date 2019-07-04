@@ -7,6 +7,7 @@
 body{
 	font-family: Optima, sans-serif;
 	background-image: url('../images/bgimage.jpg');
+	background-repeat: no-repeat;
 	color: #fff;
 }
 
