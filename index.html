@@ -1,38 +1,156 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-</head>
-<body>
-	<nav>
-		<ul>
-			<li><a class="active" href="#">about</a></li>
-			<li><a href="#">work</a></li>
-			<li><a href="#">contact</a></li>
-		</ul>
-	</nav>
-	<main class="container">
-		<div class="content">
-			<h3>Hi there! My name is </h3>
-			<h1>Paste Rover </h1>
-			<p>A Programmer who is curious enough to try everything but masters none.</p>
-			<button class="btn">Resume</button>
-			<button class="btn">Say hi!</button>
-		</div> <!--- Content ends here -->
-	</main> <!--- Main sect ends here -->
-	<div class="social-rect">
-		<a href="https://www.facebook.com/boopalan.shettiyar?ref=bookmarks" target="_blank">
-			<img src="images/fb.png" id="fb">
-		</a>
-		<a href="https://github.com/thepasterover" target="_blank">
-			<img src="images/gt.png" id="gt">			
-		</a>
-		<a href="https://twitter.com/paste_the" target="_blank">
-			<img src="images/tw.png" id="tw">
-		</a>
-	</div>
-	
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Real css-->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/933b271f83.js"></script>
+
+    <title>Portfolio</title>
+  </head>
+  <body data-spy="scroll" data-target="#collapsibleNavbar">
+
+    <div id="about">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top justify-content-end">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav> <!--End Navigation-->
+
+      <div class="landing">
+        <div class="home-wrap">
+          <div class="home-inner"></div>
+            
+        </div>
+      </div> <!--End Landing Page-->
+
+      <div class="caption text-center">
+        <h1> Paste Rover</h1>
+        <h3>A Programmer who is curious enought to <br>try everything but masters none.</h3>
+      </div>
+    </div><!--End about section-->
+
+    <!--Start Work Section-->
+    <div id="work" class="offset">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/alien.jpg" class="responsive-img" alt="Alien Invasion">
+            <div class="carousel-caption">     
+              <div class="flex-pro">
+                <!-- <h1 style="font-family: 'Merriweather Sans', sans-serif; font-size: 50px;">Projects</h1> -->
+                <h4 class="pro-sub">Classic game remade in our beloved python!❤</h4>
+                <h1 class="pro-head">Alien Invasion</h1>
+                <a href="https://github.com/thepasterover/alien_invasion" target="_blank">
+                  <button type="button" class="btn btn-primary pro-btn">View Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/book.jpg" class="responsive-img" alt="Chicago">
+            <div class="carousel-caption">
+              <div class="flex-pro">
+                <h4 class="pro-sub">A script to print the meanings of words in the book!</h4>
+                <h1 class="pro-head">Book-a-dict</h1>
+                <a href="https://github.com/thepasterover/book-a-dict" target="_blank">
+                  <button type="button" class="btn btn-primary pro-btn">View Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/files.jpg" class="responsive-img" alt="New York">
+            <div class="carousel-caption">
+              <div class="flex-pro">
+                <h4 class="pro-sub">A script to organise your files efficiently!</h4>
+                <h1 class="pro-head">File Organizer</h1>
+                <a href="https://github.com/thepasterover/book-a-dict" target="_blank">
+                  <button type="button" class="btn btn-primary pro-btn">View Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <!---End work section-->
+
+    <div id="contact" class="offset">
+      <div class="flex-form">
+        <h1 style="font-family: 'Merriweather Sans', sans-serif; font-size: 50px;"> Get in touch?</h1>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Contact:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+          <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message: </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="50" placeholder="Ener your message..."></textarea>
+            </div>          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer class="social-media">
+      <div class="flex-social">
+        <h6>Boobalan Shettiyar &copy; 2019 </h6>
+        <a href="https://github.com/thepasterover" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.facebook.com/boopalan.shettiyar" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="mailto:boopalanshettiyar78@gmail.com?subject=Lets works together" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+      </div>
+    </footer>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
