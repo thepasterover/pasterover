@@ -80,8 +80,9 @@ body {
 
 .caption button{
     margin-top: 15px;
-    color: #fff;
 }
+
+
 
 /*--- Work section --- */
 
@@ -148,13 +149,13 @@ body {
 .social-media{
     width: 100%;
     max-width: 100%;
-    height: auto;
-    background-color: #FCE77D;
+    height: 60px;
+    background-color: #FBEAEB;
 }
 
 .social-media i{
     padding-right: 25px;
-    padding-top: 7px; 
+    padding-top: 10px; 
     /* display: flexbox;
     justify-content: flex-end;
     float: right;
@@ -162,7 +163,8 @@ body {
 }
 
 .social-media a{
-    color: #F96167;
+    color: #2F3C7E;
+    font-size: 18px;
 }
 
 .flex-social{
@@ -194,6 +196,13 @@ body {
     .caption h1, h3, button{
         margin: 10px;
     }
+
+    .caption button{
+        font-size: 18px;
+        width: 100px;
+        
+    }
+
     #work img{
         position: relative;
         left: 100%;
@@ -212,8 +221,11 @@ body {
         font-size: 35px;
     }
     .flex-social h6{
-        font-size: 15px;
+        font-size: 17px;
     }
-
+    .social-media a{
+        padding-top: 5px;
+        font-size: 14px;
+    }
 
 }
