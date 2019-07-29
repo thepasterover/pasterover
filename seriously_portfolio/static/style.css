@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.navbar{
+    font-size: 700;
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 1px;
+    background-color: transparent!important;
+}
+
+.navbar-nav li{
+    padding-right: 15px;
+}
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    background-image: url("bg-img1.jpg")
+}
+
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+}
+
+.caption h1{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 10px;
+}
+
+.caption h3{
+    color: #fff;
+    text-shadow: .1rem .1rem .5rem black;
+}
+
+.caption button{
+    margin-top: 15px;
+}
+
+
+
+/*--- Work section --- */
+
+.flex-pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#work{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.pro-head{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    text-shadow: .1rem .1rem .5rem black;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.pro-sub{
+    width: 100%;
+    max-width: 100%;
+}
+
+/* --- Contact Form --- */
+
+#contact{
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+    background:#1D1B1B;
+    color: #F4A950;
+    padding: 20px;
+}
+
+.flex-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    justify-content: space-around;
+}
+
+.flex-form h1{
+    font-family: 'Merriweather Sans', sans-serif; 
+    font-size: 50px;
+    text-transform: uppercase;
+    border-bottom: #F4A950 solid;
+    border-radius: 20px;
+}
+
+/* --- Social Media Panel --- */
+
+.social-media{
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    background-color: #FBEAEB;
+}
+
+.social-media i{
+    padding-right: 25px;
+    padding-top: 10px; 
+    /* display: flexbox;
+    justify-content: flex-end;
+    float: right;
+    margin: 12px 30px 0px 0px; */
+}
+
+.social-media a{
+    color: #2F3C7E;
+    font-size: 18px;
+}
+
+.flex-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flex-social h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding-top:12px;
+    font-size: 20px;
+}
+
+/* --- Media Queries --- */
+@media only screen and (max-width: 600px) {
+    .caption h1{
+        font-size: 40px;
+    }
+
+    .caption h3{
+        font-size: 18px;
+    }
+
+    .caption h1, h3, button{
+        margin: 10px;
+    }
+
+    .caption button{
+        font-size: 18px;
+        width: 100px;
+        
+    }
+
+    #work img{
+        position: relative;
+        left: 100%;
+        margin-left: -200%;
+    }
+    .pro-head{
+        font-size: 35px;
+    }
+    .pro-sub{
+        font-size: 20px;
+    }
+    .flex-form h1, h6{
+        margin: 5px;
+    }
+    .flex-form h1{
+        font-size: 35px;
+    }
+    .flex-social h6{
+        font-size: 17px;
+    }
+    .social-media a{
+        padding-top: 5px;
+        font-size: 14px;
+    }
+
+}
